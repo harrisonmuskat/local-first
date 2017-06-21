@@ -1,3 +1,6 @@
+const path = require('path');
+const srcPath = path.join(__dirname, 'react', 'src');
+
 var config = {
   entry: {
     path: './react/src/main.js',
@@ -15,7 +18,11 @@ var config = {
       }
     ]
   },
-  devtool: 'eval-source-map'
+  devtool: 'eval-source-map',
+  alias: {
+      __src: srcPath,
+      __components: path.join(srcPath, 'components');
+  }
 }
 
 if (process.env.NODE_ENV === 'production') {
