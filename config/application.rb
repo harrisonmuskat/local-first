@@ -6,7 +6,7 @@ require 'rails/all'
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
 
-module Boilerplate
+module LocalFirst
   class Application < Rails::Application
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
@@ -14,9 +14,9 @@ module Boilerplate
   end
 end
 
-config.to_prepare do
-  DeviseController.respond_to :html, :json
-end
+# config.to_prepare do
+#   DeviseController.respond_to :html, :json
+# end
 
 def configure_permitted_parameters
   devise_parameter_sanitizer.for(:sign_up) << :name
