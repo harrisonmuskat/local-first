@@ -1,6 +1,6 @@
 class Api::V1::LocalfirstsController < ApiController
 
   def index
-    render json: {messages: "You have hit the API controller for static pages"}
+    render json: @localFirst
   end
 end

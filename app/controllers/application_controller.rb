@@ -4,9 +4,14 @@ class ApplicationController < ActionController::Base
   before_action :configure_permitted_parameters, if: :devise_controller?
   before_action :set_localfirst_parameters
 
-  # def set_localfirst_parameters
-  #   @state = "Mass"
-  #   @towns= "Boston"
-  # end
+  def set_localfirst_parameters
+    # @state = "Mass"
+    # @towns= "Boston"
+    @localFirst = {
+                    state: "Mass",
+                    towns: "Boston",
+                    
+                    }
+  end
 
 end
