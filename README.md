@@ -9,6 +9,11 @@ to build an easy and quick template for local first organizations to clone and h
 ## Project details
 Currently in initial phase trying to set up the back end with Ruby on Rails.  Front end will be build with React.
 
+
+##  Interested in collaborating?
+
+This project is a open source collaboration.  We are currently working as a group at Code For Boston on Tuesday Nights.  Feel free to stop by!
+
 ## Steps to get it running
 `clone repository`
 `bundle install`
