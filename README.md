@@ -1,5 +1,9 @@
 # Local First
 
+## About the Project
+
+Local first organizations help local businesses get exposure and increase traffic.  The goal of this project is
+to build an easy and quick template for local first organizations to clone and host.
 
 ## Steps to get it running
 `clone repository`
