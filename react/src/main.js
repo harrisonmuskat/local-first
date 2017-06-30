@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom';
 
 $(function() {
   ReactDOM.render(
-    <h1>React is running</h1>,
+    <h1>React is running for sure</h1>,
     document.getElementById('app')
   );
 });
