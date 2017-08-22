@@ -1,10 +1,12 @@
 import 'babel-polyfill';
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { AltContainer } from 'alt-container';
+import App from './components/App';
+import AppStore from './flux/stores/AppStore';
 
-$(function() {
-  ReactDOM.render(
-    <h1>Render some components here</h1>,
-    document.getElementById('app')
-  );
+$(() => {
+  const applicationRoot = document.getElementById('app');
+  // eslint-disable-line jsx-filename-extension
+  ReactDOM.render(<App/>, applicationRoot);
 });

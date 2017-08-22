@@ -21,7 +21,7 @@ var config = {
   devtool: 'eval-source-map',
   alias: {
       __src: srcPath,
-      __components: path.join(srcPath, 'components');
+      __components: path.join(srcPath, 'components')
   }
 }
 

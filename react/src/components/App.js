@@ -1,10 +1,11 @@
 import React from 'react';
-import _ from 'lodash';
 
-class App extends React.Component {
-  render = () => {
-    return (
-    <span> This is the app </span>
-    );
+const App = (props) => {
+  let retval;
+  if (!props.completedWizard) {
+      retval = <div id="TestDiv"> Setup Area </div>;
   }
-}
+  return retval;
+};
+
+export default App;
